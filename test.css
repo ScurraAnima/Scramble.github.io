@@ -106,8 +106,6 @@ li a:hover {
   height: 562px;
 }
 
-
-
 .container {
 	  border: 5px solid white;
 	  overflow: hidden;
@@ -118,12 +116,6 @@ li a:hover {
 	opacity: 0.7;
 }
 
-.button {
-	text-align: center;
-	position: absolute;
-	left: 47%;
-	margin: 0 auto;
-}
 
 /* Caption text */
 .text {
@@ -191,7 +183,6 @@ transform: translateX(0px);
             }
         }
 
-
 @keyframes fadein {
             from {
 transform: translateX(-1000px);
@@ -201,7 +192,6 @@ transform: translateX(-1000px);
 transform: translateX(0px);
             }
         }
-
 
 @-moz-keyframes fadeout {
             from {
@@ -247,3 +237,28 @@ span {
 #Lorem {
 	text-align: center;
 }
+
+.grid-container {
+	display: grid;
+  grid-template-columns: 0.7fr 1.4fr 0.7fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "Header Header Header" "Left Main Right" "Left Main Right" "Left Main Right";
+  width: 100%;
+  height: 100%;
+}
+
+ .grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  width: 100%;
+} 
+
+.Main { grid-area: Main; }
+
+.Left { grid-area: Left; }
+
+.Right { grid-area: Right; }
+
+.Header { grid-area: Header; }
