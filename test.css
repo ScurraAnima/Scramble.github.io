@@ -49,7 +49,7 @@ a:hover {
 }
 a:active {
 	color:white;
-	text-decoration: : none;
+	text-decoration: none;
 }
 
 ul {
@@ -82,31 +82,36 @@ li a:hover {
 #wip {
 	font-size: 60px;
 	text-align: center;
-
 }
 
 .mySlides {
 	box-sizing: content-box;
-	display: none;
 	max-width: 100%;
 	display: block;
 	margin: auto;
 	position: relative;
 	z-index: 1;
+	height: 100%;
+	padding: 0;
 }
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
-  padding: auto;
+  padding: 0;
+  padding-bottom: -5px;
+  background-image: url("./Images/106044.JPG");
+  background-size: contain;
+  height: 562px;
 }
+
 
 
 .container {
 	  border: 5px solid white;
-	  box-sizing: border-box;
 	  overflow: hidden;
+	  padding: 0;
 }
 
 .slideshow-container:hover {
@@ -162,22 +167,18 @@ li a:hover {
 .fadein {
   -moz-animation-name: fadein;
   -moz-animation-duration: 4s;
-   position: relative;
    animation-name: fadein;
    animation-duration: 4s;
-   animation: fadein 4s linear forwards;
-   	animation-timing-function: ease-in;
+   animation-timing-function: linear;
 
 }
 
 .fadeout {
   -moz-animation-name: fadeout;
   -moz-animation-duration: 4s;
-   position: relative;
    animation-name: fadeout;
    animation-duration: 4s;
-   animation: fadeout 4s linear forwards;
-   	animation-timing-function: ease-in;
+   animation-timing-function: linear;
 }
 
 @-moz-keyframes fadein {
@@ -201,6 +202,7 @@ transform: translateX(0px);
             }
         }
 
+
 @-moz-keyframes fadeout {
             from {
 transform: translateX(0px);
@@ -221,7 +223,6 @@ transform: translateX(1000px);
             }
         }
 
-
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
@@ -238,5 +239,11 @@ span {
 	font-weight: bold;
 	font-family: Arial;
 	font-size: 24px;
+	text-align: center;
+	margin: auto;
+	
+}
 
+#Lorem {
+	text-align: center;
 }

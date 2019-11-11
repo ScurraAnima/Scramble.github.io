@@ -12,11 +12,11 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}    
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" active", " ");
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active"; 
-  slides[slideIndex-1].className += " fadein"; 
+  slides[slideIndex-1].className += " fade";
   timer = setTimeout(showSlides, 10000);
 }
 } 
@@ -29,3 +29,7 @@ function resumeSlide(){
 	timer = setTimeout(showSlides, 10000);
 }
 
+function fade (){
+  slides[slideIndex].className += " fadein";
+  slides[slideIndex-1].className += " fadeout";
+}
