@@ -1,0 +1,247 @@
+body {
+	background-color: #ababab;
+	opacity: 0.9;
+}
+
+#banner {
+	background-image: url("./Images/persona.png");
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	width: 100%;
+}
+
+h1{
+	font-family: Arial;
+	text-align: center;
+	border: 1px solid black;
+    padding-bottom: 5px;
+    position: relative;
+    border-radius: 8%;
+    margin: auto 650px;
+}
+
+.joke {
+	color: white;
+	position: absolute;
+	border: solid white;
+	border-width: 5px;
+	border-radius: 10px;
+	margin: 150px 500px auto 250px;
+}
+
+.joke2 {
+	font-size: 32px;
+	color: white;
+}
+
+a:link {
+	color:white;
+	text-decoration: none;
+}
+a:visited {
+	color:white;
+	text-decoration: none;
+}
+a:hover {
+	color:white;
+	text-decoration: none;
+}
+a:active {
+	color:white;
+	text-decoration: : none;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+}
+
+li {
+	float:left;
+	font-family: Comic Sans MS;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #111;
+}
+#wip {
+	font-size: 60px;
+	text-align: center;
+
+}
+
+.carousel {
+	max-width: 1000;
+	max-height: 450;
+}
+
+.mySlides {
+	box-sizing: content-box;
+	display: none;
+	max-width: 100%;
+	display: block;
+	margin: auto;
+	position: relative;
+	z-index: 1;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding: auto;
+}
+
+
+.container {
+	  border: 5px solid white;
+	  box-sizing: border-box;
+	  overflow: hidden;
+}
+
+.slideshow-container:hover {
+	opacity: 0.7;
+}
+
+.button {
+	text-align: center;
+	position: absolute;
+	left: 47%;
+	margin: 0 auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-family: Dash;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  left: 50%;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fadein {
+  -moz-animation-name: fadein;
+  -moz-animation-duration: 4s;
+   position: relative;
+   animation-name: fadein;
+   animation-duration: 4s;
+   animation: fadein 4s linear forwards;
+   	animation-timing-function: ease-in;
+
+}
+
+.fadeout {
+  -moz-animation-name: fadeout;
+  -moz-animation-duration: 4s;
+   position: relative;
+   animation-name: fadeout;
+   animation-duration: 4s;
+   animation: fadeout 4s linear forwards;
+   	animation-timing-function: ease-in;
+}
+
+@-moz-keyframes fadein {
+            from {
+transform: translateX(-1000px);
+            }
+
+            to {
+transform: translateX(0px);
+            }
+        }
+
+
+@keyframes fadein {
+            from {
+transform: translateX(-1000px);
+            }
+
+            to {
+transform: translateX(0px);
+            }
+        }
+
+@-moz-keyframes fadeout {
+            from {
+transform: translateX(0px);
+            }
+
+            to {
+transform: translateX(1000px);
+            }
+        }
+
+@keyframes fadeout {
+            from {
+transform: translateX(0px);
+            }
+
+            to {
+transform: translateX(1000px);
+            }
+        }
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p {
+	text-align: center;
+	font-family: Arial;
+	font-size: 16px;
+	margin: auto 200px;
+ }
+
+span {
+	font-weight: bold;
+	font-family: Arial;
+	font-size: 24px;
+
+}
