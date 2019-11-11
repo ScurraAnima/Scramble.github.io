@@ -85,11 +85,6 @@ li a:hover {
 
 }
 
-.carousel {
-	max-width: 1000;
-	max-height: 450;
-}
-
 .mySlides {
 	box-sizing: content-box;
 	display: none;
