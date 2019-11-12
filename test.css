@@ -224,6 +224,8 @@ span {
   height: 100%;
   margin-top: -8px;
   margin-left: -8px;
+  margin-bottom: 0px;
+  margin-right: 0px;
 }
 
  .grid-container > div {
@@ -245,7 +247,6 @@ span {
   width: 400px;
   overflow: hidden;
   margin-top: -228px;
-  height: 200%;
   background-image: url("./Images/shibuya.JPG");
   background-repeat: repeat-y;
  }
@@ -266,4 +267,19 @@ span {
 
 .Footer {
   grid-area: Footer; 
+}
+
+#footer1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.shell {
+  position: relative;
+  min-height: 100vh;
+}
+
+.shell-wrap {
+  padding-bottom: 2.5em;
 }
