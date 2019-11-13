@@ -3,22 +3,45 @@ body {
 	opacity: 0.9;
 }
 
-#banner {
-	background-image: url("./Images/persona.PNG");
-	background-size: cover;
-	background-position: center;
-	height: 400px;
-	width: 100%;
-}
-
-h1{
+#index h1{
 	font-family: Arial;
 	text-align: center;
 	border: 1px solid black;
-    padding-bottom: 5px;
-    position: relative;
-    border-radius: 8%;
-    margin: auto 650px;
+  padding-bottom: 5px;
+  position: relative;
+  border-radius: 8%;
+  margin: auto 650px;
+}
+
+#ref h1{
+  font-family: Arial;
+  text-align: center;
+  padding-bottom: 5px;
+  position: relative;
+
+}
+
+p {
+  text-align: center;
+  font-family: Arial;
+  font-size: 16px;
+  margin: auto 200px;
+ }
+
+span {
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 24px;
+  text-align: center;
+  margin: auto; 
+}
+
+#banner {
+  background-image: url("../Images/persona.PNG");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
 }
 
 .navconfig {
@@ -195,22 +218,6 @@ a:active {
   background-color: #717171;
 }
 
-p {
-	text-align: center;
-	font-family: Arial;
-	font-size: 16px;
-	margin: auto 200px;
- }
-
-span {
-	font-weight: bold;
-	font-family: Arial;
-	font-size: 24px;
-	text-align: center;
-	margin: auto;
-	
-}
-
 #Lorem {
 	text-align: center;
 }
@@ -244,19 +251,17 @@ span {
 
 .Left { 
   grid-area: Left;
-  width: 400px;
-  overflow: hidden;
-  margin-top: -228px;
-  background-image: url("./Images/shibuya.JPG");
-  background-repeat: repeat-y;
  }
 
 .Right { 
   grid-area: Right;
+}
+
+.Right, .Left {
   width: 400px;
   overflow: hidden;
   margin-top: -228px;
-  background-image: url("./Images/shibuya.JPG");
+  background-image: url("../Images/shibuya.JPG");
   background-repeat: repeat-y;
 }
 
